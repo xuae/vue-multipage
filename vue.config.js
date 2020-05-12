@@ -2,6 +2,7 @@
  * vue 配置
  */
 
+/*
 // 在当前项目的基础上，仅需要添加几个静态页面
 module.exports = {
   pages: {
@@ -35,6 +36,7 @@ module.exports = {
     },
   },
 }
+*/
 
 /*
 // 纯多页应用
@@ -44,20 +46,18 @@ module.exports = {
 }
 */
 
-/*
-// 多项目，同时启动，分开打包
+/**
+ * 多项目
+ *
+ * 启动单个项目：npm run serve -- --project=项目名，访问地址：http://localhost:端口
+ * 启动全部项目：npm run serve，访问地址：http://localhost:端口/项目名
+ *
+ * 打包单个项目：npm run build 项目名
+ * 打包全部项目：npm run build-all
+*/
 const project = require('./config/project.js');
 module.exports = {
-  outputDir: `dist/${project.name}`,
+  outputDir: process.env.NODE_ENV == 'production' ? `dist/${project.name}` : 'dist',
   pages: project.pages(),
 }
-*/
 
-/*
- // 多项目，分开启动，分开打包，开发中
- const project = require('./config/project.js');
- module.exports = {
-   outputDir: process.env.NODE_ENV == 'production' ? `dist/${project.name}` : 'dist',
-   pages: project.single(),
- }
-*/
