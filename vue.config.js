@@ -53,7 +53,7 @@ module.exports = {
  * 启动全部项目：npm run serve，访问地址：http://localhost:端口/项目名
  *
  * 打包单个项目：npm run build 项目名
- * 打包全部项目：npm run build-all
+ * 打包全部项目：npm run build:all
 */
 const project = require('./config/project.js');
 module.exports = {
