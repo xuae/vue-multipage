@@ -183,4 +183,4 @@ Vue CLI v3.0及以上脚手架搭建的 vue 项目的目录结构大致如下：
 
 ### 打包项目
 - 打包单个项目：`npm run build 项目名`
-- 打包全部项目：`npm run build-all`
+- 打包全部项目：`npm run build:all`
