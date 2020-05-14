@@ -103,6 +103,25 @@ Vue CLI v3.0及以上脚手架搭建的 vue 项目的目录结构大致如下：
 
 1. 若需要从其他页面跳转至 `login` 页面，请使用 `<a href="/login">跳转至登录页</a>` 或者 `<a href="/login.html">跳转至登录页</a>`
 
+1. 构建后的文件目录结构如下：
+
+    ```
+    └─dist                    #构建后的主文件夹
+       ├─index.html           #入口html文件
+       ├─login.html           #登录页html
+       ├─favicon.ico          #网站图标
+       │
+       ├─js                   #js文件夹
+       │ ├─index.js
+       │ ├─login.js
+       │ └─...                #其他js文件
+       │
+       └─css                  #css文件夹
+         ├─index.css
+         ├─login.css
+         └─...                #其他css文件
+    ```
+
 ## 纯多页应用
 > 在以上的基础上做修改
 
@@ -136,6 +155,25 @@ Vue CLI v3.0及以上脚手架搭建的 vue 项目的目录结构大致如下：
        // 其他代码...
       pages: page.pages(),
     }
+    ```
+
+1. 构建后的文件目录结构如下：
+
+    ```
+    └─dist                    #构建后的主文件夹
+       ├─index.html           #入口html文件
+       ├─login.html           #登录页html
+       ├─favicon.ico          #网站图标
+       │
+       ├─js                   #js文件夹
+       │ ├─index.js
+       │ ├─login.js
+       │ └─...                #其他js文件
+       │
+       └─css                  #css文件夹
+         ├─index.css
+         ├─login.css
+         └─...                #其他css文件
     ```
 
 ## 多项目
@@ -175,6 +213,27 @@ Vue CLI v3.0及以上脚手架搭建的 vue 项目的目录结构大致如下：
        outputDir: `dist/${project.name}`,
        pages: project.pages(),
     }
+    ```
+
+1. 构建后的文件目录结构如下：
+
+    ```
+    └─dist                    #构建后的主文件夹
+       ├─a                    #a项目
+       │ ├─index.html         #入口html文件
+       │ ├─favicon.ico        #网站图标
+       │ │
+       │ ├─js                 #js文件夹
+       │ │ └─...              #js文件
+       │ │
+       │ └─css                #css
+       │   └─...              #css文件
+       │
+       ├─b                    #b项目
+       │ └─...                #和a目录结构一致
+       │
+       └─c                    #c项目
+         └─...                #和a目录结构一致
     ```
 
 ### 启动项目
