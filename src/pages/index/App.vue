@@ -2,8 +2,8 @@
   <div id="app">
     <div>Home 页面</div>
     <div id="nav">
-      <a href="/login">跳转至 Login 页</a><!-- |
-      <router-link to="/about">About</router-link>-->
+      <a href="/login">跳转至 Login 页</a> |
+      <router-link to="/about">About</router-link>
     </div>
     <!--<router-view/>-->
   </div>
