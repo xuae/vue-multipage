@@ -38,9 +38,9 @@ module.exports = {
 }
 */
 
-/*
 // 纯多页应用
-const page = require('./config/pages.js');
+/*
+const page = require('./config/page.js');
 module.exports = {
   pages: page.pages(),
 }
